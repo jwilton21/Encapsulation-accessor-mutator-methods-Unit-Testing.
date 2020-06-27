@@ -1,20 +1,45 @@
-import org.junit.Assert;
-import org.junit.jupiter.api.Test;
 
-class StudentUnitTest {
+import org.junit.Test;
 
-	Student student1 = new Student("Hannah Jones", 17235189,"MSc Honours Software Engineering",0);
-	Student student2 = new Student("George Barr", 17235190,"MSc Honours Biomedical Engineering",0);
+public class StudentUnitTest
+{	@Test
+	public void testEnrollOnModule()
+{
+	Student student1 = new Student("Hannah Jones", 17235189,21031992,27);
+	Student student2 = new Student("Harry Potter", 	17235190,14011991,29);
+	String student1Expected = "Hannah Jones has enrolled on the module";
+	String student1Actual;
+
+	System.out.println("Test output: ");
+	student1.enrolOnModule("Hannah Jones ");
+	System.out.println("Expected output: Hannah Jones has enrolled on the module");
 	
-	// First unit test.
-	@Test
-	void test3EnrolInModule()
-	{	
-		System.out.println("Expected output: Hannah Jones has enrolled in the module.");
-		student1.enrolOnModule();
-		Assert.assertEquals("Hannah Jones has enrolled in the module","Hannah Jones has enrolled in the module");
-		// If assertEquals method returns true then next line accessed and test passed.
-		System.out.println("Test passed");
-	}
+	// TODO test case methods using assertEquals instead.
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
