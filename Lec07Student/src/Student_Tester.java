@@ -20,8 +20,9 @@ public class Student_Tester {
 		// Change name.
 		student1.setStudentName("Hannah Riley");
 		
-		// Have a birthday
+		// Have a birthday, increment with setter.
 		student1.setAge(28);
+		// Test.
 		student1.getStudentName();
 	}
 

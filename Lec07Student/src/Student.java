@@ -7,7 +7,7 @@ public class Student
 	private int age;
 
 
-	// Setting up the object with the full parameter list.
+	// Setting up the object.
 	public Student(String studentName, int studentNumber, double dateOfBirth, int age)
 	{	// Assign.
 		this.name = studentName;
@@ -29,9 +29,6 @@ public class Student
 		return studentNumber;
 
 	}
-
-
-
 
 	// GETTER
 	public double getAge()
